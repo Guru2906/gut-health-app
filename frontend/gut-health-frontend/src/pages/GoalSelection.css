@@ -1,0 +1,135 @@
+/* ✅ Goal Selection Container Styling */
+.goal-selection-box {
+  text-align: center;
+  padding: 10px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* ✅ Goal Buttons */
+.goal-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.goal-buttons button {
+  padding: 12px 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goal-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.goal-buttons .selected {
+  border-color: #3a86ff;
+  background-color: #e7f0ff;
+  color: #2e5ec4;
+}
+
+.icon {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+/* ✅ Calendar Section Styling */
+.calendar-section {
+  margin-top: 25px;
+}
+
+.calendar-wrapper {
+  margin-top: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* ✅ Custom Overrides for react-date-range calendar */
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
+
+.rdrCalendarWrapper,
+.rdrDateDisplayWrapper {
+  background-color: white !important;
+  border: 1px solid #ddd !important;
+  box-shadow: none !important;
+  color: #333 !important;
+}
+
+.rdrMonthAndYearPickers select {
+  background-color: white !important;
+  color: #333 !important;
+  border-radius: 6px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+.rdrDay:hover,
+.rdrDayPassive:hover {
+  background: #e6f2ff !important;
+}
+
+.rdrDaySelected {
+  background: #3a86ff !important;
+  color: white !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  background: #3a86ff !important;
+}
+
+/* ✅ Date Text Display */
+.date-display {
+  margin-top: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  color: #333;
+}
+
+/* ✅ Submit Button */
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #3a86ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2667cc;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 480px) {
+  .goal-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .date-display {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+}

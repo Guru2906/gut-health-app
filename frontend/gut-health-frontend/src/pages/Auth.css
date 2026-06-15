@@ -1,0 +1,90 @@
+/* ✅ Container for Centering */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ✅ Frosted Glass Box Styling */
+.auth-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  width: 400px;
+  max-width: 100%;
+}
+
+/* ✅ Headings */
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* ✅ Form Styling */
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-box input,
+.auth-box select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.auth-box input:focus,
+.auth-box select:focus {
+  border-color: #27ae60;
+}
+
+/* ✅ Buttons */
+.auth-box button {
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.auth-box button:hover {
+  background-color: #219150;
+  transform: translateY(-2px);
+}
+
+.auth-box button:active {
+  transform: translateY(0);
+}
+
+/* ✅ Error Messages */
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-msg {
+  background-color: #ffe0e0;
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}

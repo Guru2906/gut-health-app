@@ -1,0 +1,142 @@
+/* Base resets and fonts */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #004d40;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+nav button:hover {
+  background-color: #c2185b;
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Headings and Forms */
+h2 {
+  text-align: center;
+  color: #004d40;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  width: 100%;
+  background-color: #004d40;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00695c;
+}
+
+/* Button general */
+button {
+  cursor: pointer;
+}
+
+/* Cards & Totals */
+.day-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.totals-box {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.graph-container {
+  margin-top: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🌿 Green-Blue Gradient Background */
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 🎨 Soft Abstract Blobs */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(100px);
+  opacity: 0.4;
+}
+
+body::before {
+  background: #a0f1e0;
+  top: -100px;
+  left: -100px;
+}
+
+body::after {
+  background: #ccf1ff;
+  bottom: -100px;
+  right: -100px;
+}

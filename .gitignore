@@ -1,0 +1,11 @@
+venv/
+.venv/
+node_modules/
+__pycache__/
+firebase_key.json
+.env
+*.zip
+*.pdf
+*.docx
+*.pptx
+*.xlsx
